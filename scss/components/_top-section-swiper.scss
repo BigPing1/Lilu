@@ -1,0 +1,27 @@
+.topS-swiper {
+  width: 100%;
+  height: 420px;
+}
+
+.topS-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.topS-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.topS-swiper {
+  width: 75%;
+  height: 420px;
+  margin: 20px auto;
+}

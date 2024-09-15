@@ -1,0 +1,11 @@
+.premium-card {
+  z-index: 3;
+  cursor: pointer;
+}
+.just-card {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}

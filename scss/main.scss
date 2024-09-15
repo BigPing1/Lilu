@@ -1,0 +1,25 @@
+// Base-style
+@import "base";
+
+// Utils
+@import "utils/container";
+@import "utils/variables";
+@import "utils/fonts";
+@import "utils/modals";
+@import "utils/animation-text";
+@import "utils/buttons";
+@import "utils/scrollbar";
+
+// Layout
+@import "layout/header";
+@import "layout/top-section";
+
+// Components
+@import "components/film-categories";
+@import "components/series-categoties";
+@import "components/login";
+@import "components/swiper";
+@import "components/top-section-swiper";
+@import "components/premium-card";
+@import "components/premium-modal";
+@import "components/view-modal";

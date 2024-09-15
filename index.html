@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Lilu</title>
+
+    <script defer src="js/filmCategory.js"></script>
+    <script defer src="js/seriesCategory.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script defer src="js/swiper.js"></script>
+    <script defer src="js/swiperTopSection.js"></script>
+    <script defer src="js/modalView.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-container__nav">
+                <h1 class="header-container__logo">
+                    <span class="animation-leter">L</span><span class="animation-leter">i</span><span
+                        class="animation-leter">l</span><span class="animation-leter">u</span>
+                </h1>
+                <ul class="header-container__list">
+
+                    <li id="filmItem" class="header-container__item film-categories">
+                        <p class="header-container__item-text">Films</p>
+                        <ul id="listBlock" class="film-categories__list">
+                            <li class="film-categories__item film-categories__first-item">New</li>
+                            <li class="film-categories__item film-categories__second-item">Classic</li>
+
+                        </ul>
+                    </li>
+                    <li id="seriesCategory" class="header-container__item series-category">
+                        <p class="header-container__item-text">Series</p>
+                        <ul id="seriesList" class="series-category__list">
+                            <li class="series-category__item series-category__first-item">Netflix</li>
+                            <li class="series-category__item series-category__second-item">Amazon</li>
+                            <li class="series-category__item series-category__third-item">HBO</li>
+                            <li class="series-category__item series-category__four-item">AMC</li>
+                        </ul>
+                    </li>
+                    <li id="btnOpenLogin" class="header-container__item ">
+                        <p class="header-container__item-text">Login</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="swiper-section">
+
+        <div class="swiper-section__container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Avengers-slide1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/TheBoys_slide2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/walkingDead-slide3.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/demonslayer-slide4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/houseOfDragons-slide5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/pirates-slide6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/peaky-slide7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/onepiece-slide8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/bad-slide9.jpg" alt=""></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="top-section">
+        <div class="container">
+            <div class="top-section__container">
+                <div class="top-section__premium">
+                    <h2 class="top-section__tytle">Top views <span class="top-section__accent">JUST NOW</span></h2>
+                    <button id="btnOpenPremium" class="top-section__button">
+                        <h3 class="top-section__buy animation-gold">Buy PREMIUM</h3>
+                        <svg class="top-section__star">
+                            <use href="img/icons.svg#icon-star"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="top-section__swiper">
+                    <div #swiperRef="" class="topS-swiper topS-mySwiper swiper">
+                        <div class="topS-swiper-wrapper swiper-wrapper">
+                            <div class="topS-swiper-slide swiper-slide">
+                                <button id="modalOpenView" class="openViewBtn">
+                                    <img class="just-card" src="img/card/card1.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+
+                                <img class="just-card" src="img/card/card2.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card3.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card4.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card5.jpg" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card6.jpg" alt="">
+
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card7.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card8.jpg" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card9.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card10.jpg" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card11.jpg" alt="">
+                            </div>
+                            <div class="topS-swiper-slide swiper-slide">
+                                <img class="just-card" src="img/card/card12.jpg" alt="">
+                                <img class="premium-card" src="img/premium-card.png" alt="">
+                            </div>
+                        </div>
+                        <div class="topS-swiper-button-next swiper-button-next"></div>
+                        <div class="topS-swiper-button-prev swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+    <div id="modalLogin" class="login modal">
+        <div id="dropbox" class="login__dropbox dropbox">
+            <div class="login__modal">
+                <button id="btnCloseLogin" class="login__close-button">L</button>
+                <form class="login__form">
+                    <h2 class="login__tytle">Welcome to Lilu!</h2>
+                    <div class="login__form-input">
+                        <div class="login__field">
+                            <label class="login__label" for="login">Please, enter your LOGIN</label>
+                            <input class="login__input" name="login" type="text" placeholder="Login">
+                        </div>
+
+                        <div class="login__field">
+                            <label class="login__label" for="pass">Please, enter your PASSWORD</label>
+                            <input class="login__input" name="pass" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button class="login__send-button">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modalPremium" class="premium modal">
+        <div id="dropbox" class="dropbox">
+            <div class="premium__modal">
+                <button id="btnClosePremium" class="login__close-button">L</button>
+                <div class="premium__text">
+                    <h3 class="premium__tytle">Lilu </h3>
+                    <div class="glich-text">
+                        <div class="glitch" data-text="PREMIUM">PREMIUM</div>
+                        <div class="glow">PREMIUM</div>
+                        <div class="scanlines"></div>
+                    </div>
+                </div>
+                <div class="premium__planes">
+                    <div class="premium__card">
+                        <h4 class="premium__card-tytle animation-gold">Premium</h4>
+                        <ul class="plemium__list">
+                            <li class="premium__list-item animation-gold">Huge collection of films and TV series in high
+                                quality 4K
+                            </li>
+                            <li class="premium__list-item animation-gold">No ads for uninterrupted browsing</li>
+                            <li class="premium__list-item animation-gold">Personalized recommendations based on your
+                                preferences</li>
+                            <li class="premium__list-item animation-gold">Daily catalog updates with new cinema releases
+                            </li>
+                        </ul>
+                        <button class="premium__button" role="button"><span
+                                class="animation-gold">36$/mounth</span></button>
+                    </div>
+                    <div class="premium__card">
+                        <h4 class="premium__card-tytle animation-gold">Premium <span>Plus</span></h4>
+                        <ul class="plemium__list">
+                            <li class="premium__list-item animation-gold">All the benefits of Premium</li>
+                            <li class="premium__list-item animation-gold">Ability to download movies for offline viewing
+                            </li>
+                            <li class="premium__list-item animation-gold">Supports multiple devices simultaneously</li>
+                            <li class="premium__list-item animation-gold">Creating closed groups for watching movies
+                                with friends</li>
+                            <li class="premium__list-item animation-gold">Live broadcast of sporting events</li>
+                        </ul>
+                        <button class="premium__button" role="button"><span
+                                class="animation-gold">90$/mounth</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalView-modal" class="modal-view">
+        <div class="modal-view__modal">
+            <button id="closeViewBtn" class="closeViewBtn">L</button>
+            <h3 class="modal-view__tytle">House of the Dragon</h3>
+            <p class="modal-view__text">Following King Aegon II’s coronation and the death of Queen Rhaenyra’s son,
+                House Targaryen is divided in
+                two. In King’s
+                Landing, Aegon II rules from the Iron Throne, supported by Alicent and the Green Council, under the
+                protection of the
+                largest dragon in Westeros. From exile on Dragonstone, Queen Rhaenyra and her Black Council consider
+                their next move.
+                Civil war looms as both sides seek support from the great houses of Westeros, ultimately amassing armies
+                — and dragons. <br><br>
+
+                House of the Dragon stars Matt Smith, Olivia Cooke, Emma D’Arcy, Eve Best, Steve Toussaint, Fabien
+                Frankel, Ewan
+                Mitchell, Tom Glynn-Carney, Sonoya Mizuno, Rhys Ifans, Harry Collett, Bethany Antonia, Phoebe Campbell,
+                Phia Saban,
+                Jefferson Hall, and Matthew Needham. Additional Season 2 cast includes Abubakar Salim, Gayle Rankin,
+                Freddie Fox, Simon
+                Russell Beale, Clinton Liberty, Jamie Kenna, Kieran Bew, Tom Bennett, Tom Taylor, and Vincent Regan.
+                <br><br>
+
+                Co-creator/executive producer, George R.R. Martin; co-creator/showrunner/executive producer, Ryan
+                Condal; executive
+                producers, Sara Hess, Alan Taylor, Melissa Bernstein, Kevin de la Noy, Loni Peristere, and Vince
+                Gerardis. Based on
+                George R.R. Martin’s Fire & Blood.
+            </p>
+            <iframe class="modal-view__frame"
+                src="https://www.youtube-nocookie.com/embed/ibKT6ncwulM?si=ezlKIWTL8r9x1iZ5"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

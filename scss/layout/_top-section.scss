@@ -1,0 +1,38 @@
+.top-section {
+  margin: 100px 0;
+
+  &__premium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tytle {
+    font-size: 38px;
+    color: var(--color-text-light);
+  }
+  &__accent {
+    color: var(--color-brand-light);
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  &__star {
+    fill: #ffdc58;
+    width: 30px;
+    height: 30px;
+  }
+  &__image {
+    height: 500px;
+    width: 500px;
+    background-size: contain;
+  }
+  &__buy {
+    font-size: 30px;
+  }
+}
